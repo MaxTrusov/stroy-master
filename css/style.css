@@ -1,4 +1,6 @@
 *{
+    margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
 }
 a{
@@ -17,12 +19,13 @@ li{
     padding: 0 15px;
 }
 
-body{    
+html, body{    
     font-family: 'PT Serif', serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #5e5e5e;
+    overflow-x:hidden;
 }
 /* ------------------------------ */
 /* ---------------------------------- */
@@ -68,6 +71,16 @@ header{
         content: "";
         clear: both;
         display: block;
+    }
+    .header-logo a{
+        color: #303030;
+        text-shadow: 4px 4px 4px rgba(100,100,100,0.3)
+    }
+    /* .header-logo h1{
+
+    } */
+    .header-logo span{
+        color: #ffc222;
     }
     .header_phone,
     .header_email{
@@ -175,6 +188,7 @@ header{
         height: 100%;        
         background-color: rgba(150,150,150,0.3);
     }
+    
     .slider_item-content{
         max-width: 665px;
         text-align: center;
@@ -184,6 +198,7 @@ header{
         border: none;
         color: #fff;
     }
+  
     .slider_title{
         text-transform: uppercase;
         font-size: 30px;
@@ -191,20 +206,26 @@ header{
         font-weight: 500;
         letter-spacing: 0.5px;
         margin-bottom: 22px;
+        text-shadow: black 3px 1px 3px;
         font-family: 'Roboto', sans-serif;
     }
     .slider_text{
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 50px;
+        text-shadow: black 3px 1px 3px;
     }
     .slider_btn{
         outline: none;
+    }
+    .slider .default-btn{
+        text-shadow: black 3px 1px 3px;
     }
     .default-btn{
         position: relative;
         display: inline-block;
         color: #fff;
+        letter-spacing: 0.5px;
         font-size: 14px;
         line-height: 24px;
         font-weight: 500;
@@ -228,7 +249,7 @@ header{
     }
     .slick-btn{
        position: absolute;
-       top: 70%;
+       top: 55%;
        z-index: 3;
        width: 40px;
        height: 40px;
@@ -266,7 +287,7 @@ header{
     }
     /* -------------------------------- */
     /* -------------------------------------------- */
-    /* !!! css services  */
+    /*  css services  */
 
     .services{
         padding: 50px 0px 30px;
@@ -283,6 +304,7 @@ header{
         max-width: 520px;
         padding-left: 140px;
         position: relative;
+        right: 23%;
     }
     .services_title-box:before,
     .form_title-box:before,
@@ -372,7 +394,7 @@ header{
     } 
 
 /* ------------------------------------------------ */
-/* !!--css about */
+/* --css about */
     .about{
         background-image: url(../img/about-bg-fon.jpg);
         background-size: cover;
@@ -418,6 +440,8 @@ header{
 .form_box{
 max-width: 600px;
 padding-top: 30px;
+position: relative;
+right: 23%;
 }
 .form_box-inner{
     display: flex;
@@ -547,7 +571,11 @@ padding-top: 30px;
     margin-left: 30px;
 }
 .footer_contact{
-    width: 50%;
+    width: 100%;
+}
+.footer_btn{
+    position: relative;
+    left: 30%;
 }
 .footer_contact a{
     color: #fff;
